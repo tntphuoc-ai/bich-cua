@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bích Cua — Business Plan | COGS, Retail Pricing & Estimator</title>
+<style>
+:root{
+  --red:#C4501A;
+  --red-2:#E7662E;
+  --dark:#26130D;
+  --dark-2:#351A10;
+  --green:#2A6B5A;
+  --green-2:#4D9B83;
+  --cream:#FBF3E7;
+  --cream-2:#FFF9F0;
+  --sand:#EAD4B8;
+  --gold:#F0B35A;
+  --ink:#17110E;
+  --muted:#7F6556;
+  --line:rgba(38,19,13,.12);
+  --soft:rgba(196,80,26,.10);
+  --white:#fff;
+  --shadow:0 18px 60px rgba(38,19,13,.12);
+  --shadow-sm:0 8px 24px rgba(38,19,13,.08);
+  --radius:24px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;background:var(--cream)}
+body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;color:var(--ink);background:linear-gradient(180deg,var(--cream-2) 0%,var(--cream) 42%,#fff 100%);line-height:1.55;font-size:15px}
+a{color:inherit;text-decoration:none}
+.container{width:min(1180px,calc(100% - 40px));margin:0 auto}.wide{width:min(1320px,calc(100% - 36px));margin:0 auto}
+.logo-svg{display:block;width:172px;height:auto}.mini-logo{width:104px}.micro-logo{width:74px}
+.nav{position:sticky;top:0;z-index:50;background:rgba(38,19,13,.92);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav-inner{height:66px;display:flex;align-items:center;justify-content:space-between;gap:22px}.nav-links{display:flex;gap:4px;overflow:auto}.nav-links a{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:rgba(255,249,240,.72);padding:22px 12px;border-bottom:2px solid transparent;white-space:nowrap}.nav-links a:hover{color:#fff;border-bottom-color:var(--red-2)}
+.hero{background:radial-gradient(circle at 78% 26%,rgba(231,102,46,.22),transparent 36%),linear-gradient(135deg,var(--dark) 0%,#150B07 100%);color:var(--cream-2);padding:72px 0 56px;overflow:hidden;position:relative}.hero:before{content:"";position:absolute;inset:auto -8% -30% 44%;height:420px;background:radial-gradient(circle,rgba(42,107,90,.24),transparent 62%);pointer-events:none}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;position:relative}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.24em;font-weight:800;color:var(--red-2);margin-bottom:16px}.hero h1{font-size:clamp(44px,6vw,82px);line-height:.94;letter-spacing:-.055em;margin-bottom:24px;font-weight:950}.hero h1 span{color:var(--red-2)}.hero p{font-size:18px;color:rgba(255,249,240,.73);max-width:660px}.hero .quote{font-family:Georgia,serif;font-style:italic;color:#F6C99B;margin-top:16px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}.btn{border:1px solid rgba(255,255,255,.14);padding:13px 18px;border-radius:999px;font-size:12px;letter-spacing:.11em;text-transform:uppercase;font-weight:800}.btn.primary{background:var(--red);border-color:var(--red);color:#fff}.btn.ghost{background:rgba(255,255,255,.06);color:rgba(255,255,255,.82)}
+.hero-card{background:rgba(255,249,240,.07);border:1px solid rgba(255,255,255,.12);border-radius:34px;padding:28px;box-shadow:0 30px 90px rgba(0,0,0,.26);position:relative;overflow:hidden}.hero-card:before{content:"";position:absolute;width:280px;height:280px;border-radius:50%;right:-84px;top:-100px;background:rgba(196,80,26,.28)}.hero-logo-wrap{background:var(--cream-2);border-radius:28px;padding:30px 28px;text-align:center;position:relative;color:var(--dark);box-shadow:var(--shadow-sm)}.hero-logo-wrap .logo-svg{margin:auto;width:360px;max-width:100%}.tagline{font-family:Georgia,serif;font-size:17px;color:var(--green);margin-top:6px}.hero-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}.metric{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.10);border-radius:18px;padding:16px 12px;text-align:center}.metric b{display:block;font-size:24px;letter-spacing:-.03em;color:#fff}.metric span{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:rgba(255,249,240,.56)}
+.section{padding:72px 0}.section.alt{background:#fff}.section.dark{background:var(--dark);color:var(--cream-2)}.section-head{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:28px}.section-title{font-size:clamp(30px,4vw,52px);line-height:1.02;letter-spacing:-.045em;font-weight:950;color:var(--dark)}.dark .section-title{color:#fff}.section-lead{max-width:720px;color:var(--muted);font-size:17px}.dark .section-lead{color:rgba(255,249,240,.64)}.kicker{font-size:11px;text-transform:uppercase;letter-spacing:.22em;font-weight:900;color:var(--red);margin-bottom:10px}.dark .kicker{color:var(--gold)}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:22px}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{background:var(--cream-2);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow-sm)}.card.white{background:#fff}.dark .card{background:rgba(255,249,240,.06);border-color:rgba(255,255,255,.10);box-shadow:none}.card h3{font-size:22px;letter-spacing:-.03em;margin-bottom:10px;color:var(--dark)}.dark .card h3{color:#fff}.card p{color:var(--muted)}.dark .card p{color:rgba(255,249,240,.65)}.num-card{padding:24px;border-radius:24px;background:linear-gradient(180deg,#fff,var(--cream-2));border:1px solid var(--line);box-shadow:var(--shadow-sm)}.num-card .big{font-size:42px;line-height:1;font-weight:950;color:var(--red);letter-spacing:-.05em}.num-card .label{font-size:11px;text-transform:uppercase;letter-spacing:.14em;font-weight:850;color:var(--muted);margin-top:8px}.num-card .note{font-size:13px;color:var(--muted);margin-top:8px}.warning{background:linear-gradient(135deg,rgba(196,80,26,.14),rgba(240,179,90,.12));border:1px solid rgba(196,80,26,.22);border-left:6px solid var(--red);border-radius:22px;padding:20px}.warning h3{color:var(--red);font-size:20px}.warning p{color:#5B3A25}.green-box{background:linear-gradient(135deg,rgba(42,107,90,.12),rgba(77,155,131,.06));border-left:6px solid var(--green)}
+.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:22px;background:#fff;box-shadow:var(--shadow-sm)}table{width:100%;border-collapse:collapse;min-width:940px}th{background:var(--dark);color:var(--cream-2);font-size:11px;text-transform:uppercase;letter-spacing:.12em;text-align:left;padding:14px 16px;white-space:nowrap}td{padding:14px 16px;border-bottom:1px solid var(--line);vertical-align:top}tr:nth-child(even) td{background:#FCF7EF}tr:last-child td{border-bottom:0}.td-bold{font-weight:850;color:var(--dark)}.td-red{font-weight:900;color:var(--red)}.td-green{font-weight:900;color:var(--green)}.td-muted{color:var(--muted);font-size:13px}.pill{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:4px 10px;font-size:11px;font-weight:850;letter-spacing:.04em}.pill.red{background:rgba(196,80,26,.12);color:var(--red)}.pill.green{background:rgba(42,107,90,.12);color:var(--green)}.pill.gold{background:rgba(240,179,90,.2);color:#945B10}
+.price-ladder{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.ladder{border-radius:28px;padding:28px;position:relative;overflow:hidden;color:#fff;min-height:250px}.ladder:after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-70px;bottom:-80px;background:rgba(255,255,255,.13)}.ladder.entry{background:linear-gradient(135deg,var(--green),#174439)}.ladder.signature{background:linear-gradient(135deg,var(--red),#8E2E12)}.ladder.flagship{background:linear-gradient(135deg,var(--dark),#0F0704)}.ladder h3{font-size:28px;line-height:1.05;margin:8px 0;color:#fff}.ladder .range{font-size:36px;font-weight:950;letter-spacing:-.05em}.ladder p{color:rgba(255,255,255,.72)}
+.cogs-stack{display:grid;grid-template-columns:1fr 1fr;gap:22px}.stack-chart{display:flex;height:54px;overflow:hidden;border-radius:999px;background:#eee;border:1px solid var(--line);margin:18px 0}.seg{display:flex;align-items:center;justify-content:center;color:white;font-size:11px;font-weight:900;text-shadow:0 1px 1px rgba(0,0,0,.2)}.seg.crab{background:var(--red);width:48%}.seg.ing{background:var(--gold);width:14%;color:#3B240F}.seg.pack{background:var(--green);width:10%}.seg.lab{background:#6B4B3B;width:13%}.seg.waste{background:#9E6A42;width:7%}.seg.channel{background:#2A2220;width:8%}.legend{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.legend div{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:13px}.dot{width:12px;height:12px;border-radius:50%;display:inline-block}
+.estimator{display:grid;grid-template-columns:410px 1fr;gap:24px;align-items:start}.panel{background:rgba(255,249,240,.07);border:1px solid rgba(255,255,255,.11);border-radius:28px;padding:24px}.panel h3{font-size:22px;color:#fff;margin-bottom:16px}.field{margin-bottom:16px}.field label{display:flex;justify-content:space-between;gap:12px;align-items:baseline;font-size:12px;text-transform:uppercase;letter-spacing:.11em;font-weight:850;color:rgba(255,249,240,.58);margin-bottom:8px}.field label b{color:var(--gold);font-size:13px;letter-spacing:0;text-transform:none}.field input,.field select{width:100%;border-radius:14px;border:1px solid rgba(255,255,255,.14);background:rgba(0,0,0,.22);color:#fff;padding:12px 14px;outline:0}input[type=range]{padding:0;height:6px;accent-color:var(--red-2)}.twocol{display:grid;grid-template-columns:1fr 1fr;gap:12px}.result-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.result-card{border-radius:22px;padding:19px 16px;background:rgba(255,249,240,.07);border:1px solid rgba(255,255,255,.10);text-align:center}.result-card .val{display:block;font-size:27px;font-weight:950;letter-spacing:-.045em;color:#fff}.result-card .lab{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:rgba(255,249,240,.46);margin-top:4px}.result-card.good .val{color:#75D2B6}.result-card.warn .val{color:var(--gold)}.result-card.bad .val{color:#FF8C76}.formula{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.10);border-radius:18px;padding:18px;color:rgba(255,249,240,.72);font-size:13px;margin-top:14px}.barbox{height:190px;display:flex;align-items:end;gap:12px;padding-top:20px}.bar{flex:1;display:flex;flex-direction:column;justify-content:end;align-items:center;gap:8px}.bar div{width:100%;border-radius:9px 9px 0 0;background:linear-gradient(180deg,var(--green-2),var(--green));min-height:4px}.bar.neg div{background:linear-gradient(180deg,#FF8C76,var(--red))}.bar span{font-size:10px;color:rgba(255,249,240,.52);font-family:ui-monospace,monospace}.verdict{border-radius:22px;padding:18px;background:rgba(42,107,90,.18);border:1px solid rgba(77,155,131,.30);color:#BDEEDD;margin-top:14px}.verdict.warn{background:rgba(240,179,90,.14);border-color:rgba(240,179,90,.28);color:#F5CF95}.verdict.bad{background:rgba(196,80,26,.17);border-color:rgba(196,80,26,.28);color:#FFB09E}.mini-note{font-size:12px;color:rgba(255,249,240,.48);margin-top:10px}
+.dish-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.dish{border-radius:28px;background:#fff;border:1px solid var(--line);overflow:hidden;box-shadow:var(--shadow-sm)}.dish-visual{height:150px;background:radial-gradient(circle at 52% 36%,#FFF6DF 0 22%,#F2B35B 23% 30%,#E7662E 31% 40%,#C4501A 41% 44%,transparent 45%),linear-gradient(135deg,#FBE7C8,#fff);position:relative}.dish-visual:before{content:"";position:absolute;left:50%;top:58%;transform:translate(-50%,-50%);width:170px;height:70px;border-radius:0 0 120px 120px;background:rgba(255,255,255,.82);border:1px solid rgba(38,19,13,.12);box-shadow:0 18px 35px rgba(38,19,13,.12)}.dish-visual:after{content:"";position:absolute;left:18%;right:18%;bottom:34px;height:8px;border-radius:999px;background:var(--green);box-shadow:0 12px 0 rgba(42,107,90,.44)}.dish-body{padding:20px}.dish h3{font-size:20px}.dish p{font-size:13px}.footer{background:#120906;color:rgba(255,249,240,.62);padding:44px 0;text-align:center}.footer .logo-svg{margin:0 auto 12px;width:190px}.footer p{font-size:13px}.print-only{display:none}
+@media print{.nav,.hero-actions{display:none}.section{padding:38px 0}.card,.table-wrap,.num-card{box-shadow:none}.section.dark{background:#fff;color:var(--ink)}.dark .section-title,.dark .panel h3{color:var(--dark)}.panel,.dark .card{background:#fff;color:var(--ink);border-color:var(--line)}.field label,.field label b,.result-card .lab,.formula,.mini-note{color:var(--muted)}.result-card{background:#fff;border-color:var(--line)}.result-card .val{color:var(--red)}.print-only{display:block}}
+@media(max-width:980px){.hero-grid,.grid-2,.cogs-stack,.estimator{grid-template-columns:1fr}.grid-3,.grid-4,.price-ladder,.dish-grid{grid-template-columns:1fr 1fr}.section-head{display:block}.nav-links{display:none}.result-grid{grid-template-columns:1fr 1fr}.twocol{grid-template-columns:1fr}}@media(max-width:640px){.container,.wide{width:min(100% - 24px,1180px)}.hero{padding:44px 0}.hero-metrics,.grid-3,.grid-4,.price-ladder,.dish-grid,.result-grid{grid-template-columns:1fr}.hero h1{font-size:46px}.card{padding:20px}.estimator{gap:14px}.panel{padding:18px}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+<symbol id="bich-cua-logo" viewBox="0 0 450 150">
+  <g transform="translate(22,10)">
+    <path d="M22 84 C31 38, 71 20, 119 31 C151 38, 176 57, 186 85 C159 74, 140 72, 120 77 C96 84, 70 82, 49 75 C40 72, 31 75, 22 84Z" fill="#C4501A"/>
+    <path d="M64 37 C78 20, 106 17, 126 31 C103 28, 86 31, 64 37Z" fill="#E7662E" opacity=".72"/>
+    <path d="M29 87 C16 77, 13 62, 23 50 C36 35, 62 32, 76 43 C57 53, 43 69, 29 87Z" fill="#C4501A"/>
+    <path d="M179 87 C192 77, 195 62, 185 50 C172 35, 146 32, 132 43 C151 53, 165 69, 179 87Z" fill="#C4501A"/>
+    <path d="M32 83 C43 71, 52 60, 70 50" fill="none" stroke="#FFF9F0" stroke-width="13" stroke-linecap="round"/>
+    <path d="M176 83 C165 71, 156 60, 138 50" fill="none" stroke="#FFF9F0" stroke-width="13" stroke-linecap="round"/>
+    <path d="M55 108 C72 99, 90 99, 107 108 C124 117, 142 117, 159 108" stroke="#2A6B5A" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M64 124 C78 117, 94 117, 110 124 C126 131, 141 131, 155 124" stroke="#2A6B5A" stroke-width="5" fill="none" stroke-linecap="round" opacity=".72"/>
+  </g>
+  <text x="230" y="72" font-family="Arial Black, Inter, sans-serif" font-size="58" font-weight="900" letter-spacing="-3" fill="#17110E">BÍCH</text>
+  <text x="230" y="128" font-family="Arial Black, Inter, sans-serif" font-size="58" font-weight="900" letter-spacing="-3" fill="#C4501A">CUA</text>
+</symbol>
+</svg>
+
+<nav class="nav">
+  <div class="wide nav-inner">
+    <a href="#top" aria-label="Bích Cua"><svg class="mini-logo"><use href="#bich-cua-logo"/></svg></a>
+    <div class="nav-links">
+      <a href="#diagnosis">Diagnosis</a><a href="#cogs">COGS</a><a href="#pricing">Pricing</a><a href="#estimator">Estimator</a><a href="#monthly">Monthly</a><a href="#plan">Action Plan</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wide hero-grid">
+    <div>
+      <div class="eyebrow">Business Plan Upgrade · COGS · Retail Pricing · Estimator</div>
+      <h1>Bích Cua.<br><span>Giá phải ngon</span><br>nhưng biên phải sống.</h1>
+      <p>Phiên bản này bổ sung phân tích COGS, retail pricing, channel margin và estimator tương tác để kiểm tra giá bán theo từng món, kênh bán và mức biến động giá cua.</p>
+      <p class="quote">North Star: Không bán cua nguyên liệu. Bán bữa ăn ngon từ cua — có nguồn gốc, giao nhanh, đáng tiền và có thể scale.</p>
+      <div class="hero-actions"><a class="btn primary" href="#estimator">Mở estimator</a><a class="btn ghost" href="#pricing">Xem bảng giá đề xuất</a></div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-logo-wrap">
+        <svg class="logo-svg"><use href="#bich-cua-logo"/></svg>
+        <div class="tagline">Cua Cà Mau. Ăn sáng mỗi ngày.</div>
+      </div>
+      <div class="hero-metrics">
+        <div class="metric"><b>500M</b><span>Vốn đầu tư</span></div>
+        <div class="metric"><b>M4–5</b><span>Target hòa vốn</span></div>
+        <div class="metric"><b>50–150</b><span>Đơn/ngày scale</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section" id="diagnosis">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="kicker">01 · Pricing Diagnosis</div><h2 class="section-title">Vấn đề không nằm ở món cua. Vấn đề nằm ở biên lợi nhuận sau channel.</h2></div>
+      <p class="section-lead">Bản business plan hiện tại đã có menu, giá bán, kênh TikTok/Shopee và target hòa vốn. Phần cần nâng cấp là tách rõ COGS sản phẩm, phí kênh bán, khuyến mãi, labor/order và waste để tránh nhìn margin quá đẹp trên giấy nhưng mỏng khi chạy thật.</p>
+    </div>
+    <div class="grid-3">
+      <div class="num-card"><div class="big">36–45%</div><div class="label">Current SKU margin</div><div class="note">Theo bảng hiện tại, margin tính từ "full cost" và giá bán đang chỉ 36–45% trước nhân công, phí nền tảng và khuyến mãi.</div></div>
+      <div class="num-card"><div class="big">20–25%</div><div class="label">App commission risk</div><div class="note">ShopeeFood/GrabFood có thể lấy phần lớn contribution nếu giữ cùng giá bán với D2C.</div></div>
+      <div class="num-card"><div class="big">+15–20%</div><div class="label">App price buffer</div><div class="note">Giá trên app nên cao hơn D2C hoặc bán theo combo độc quyền để bảo vệ biên.</div></div>
+    </div>
+    <div class="warning" style="margin-top:22px">
+      <h3>Red flag cần kiểm tra trước khi launch</h3>
+      <p><b>Sashimi cua cốm 2 da</b> đang ghi 1/2 con ~200g nhưng chi phí nguyên liệu ~60.000đ. Nếu giá cua cốm là 550.000–600.000đ/kg, 200g nguyên liệu đã tương đương 110.000–120.000đ trước bao bì và labor. Vì vậy cần chốt lại: phần ăn thật là 100g, giá sỉ đặc biệt thấp hơn, hay giá retail phải nâng lên 199K–249K.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="cogs">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="kicker">02 · COGS Stack</div><h2 class="section-title">COGS của Bích Cua nên được nhìn như một stack, không chỉ là giá cua.</h2></div>
+      <p class="section-lead">Cua là nguyên liệu hero nhưng không được để "ăn hết margin". Mỗi SKU cần tính đủ: crab portion, nguyên liệu phụ, packaging, labor/order, waste reserve, channel fee và promo.</p>
+    </div>
+    <div class="cogs-stack">
+      <div class="card white">
+        <h3>Stack chi phí biến đổi / 1 đơn</h3>
+        <div class="stack-chart"><div class="seg crab">Cua</div><div class="seg ing">NL phụ</div><div class="seg pack">Bao bì</div><div class="seg lab">Labor</div><div class="seg waste">Waste</div><div class="seg channel">Fee</div></div>
+        <div class="legend">
+          <div><i class="dot" style="background:var(--red)"></i>Cua: 40–55% variable cost</div>
+          <div><i class="dot" style="background:var(--gold)"></i>Nguyên liệu phụ: 10–18%</div>
+          <div><i class="dot" style="background:var(--green)"></i>Bao bì/QR: 6–12%</div>
+          <div><i class="dot" style="background:#6B4B3B"></i>Labor/order: 6–10K</div>
+          <div><i class="dot" style="background:#9E6A42"></i>Waste reserve: 5–10%</div>
+          <div><i class="dot" style="background:#2A2220"></i>Channel fee: 0–25%</div>
+        </div>
+      </div>
+      <div class="card white">
+        <h3>Target economics theo kênh</h3>
+        <div class="table-wrap" style="box-shadow:none;border-radius:16px"><table style="min-width:640px">
+          <tr><th>Kênh</th><th>Giá bán</th><th>Food + Pack COGS</th><th>Contribution mục tiêu</th></tr>
+          <tr><td class="td-bold">Zalo / Website D2C</td><td>Base price</td><td class="td-green">38–45%</td><td class="td-green">28–35%</td></tr>
+          <tr><td class="td-bold">TikTok Shop / Live</td><td>Base + 5–8%</td><td>36–42%</td><td>24–32%</td></tr>
+          <tr><td class="td-bold">ShopeeFood / GrabFood</td><td>Base + 15–20%</td><td>32–39%</td><td class="td-red">18–25%</td></tr>
+          <tr><td class="td-bold">Office/B2B preorder</td><td>Bundle price</td><td>35–42%</td><td class="td-green">30–38%</td></tr>
+        </table></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="pricing">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="kicker">03 · Retail Pricing Architecture</div><h2 class="section-title">Đề xuất nâng giá theo bậc: dễ thử, dễ nghiện, dễ viral.</h2></div>
+      <p class="section-lead">Không nên dồn mọi món vào 50K–120K. Cần có bậc Entry để thử, Signature để kiếm tiền, Flagship để kể chuyện và kéo content.</p>
+    </div>
+    <div class="price-ladder" style="margin-bottom:24px">
+      <div class="ladder entry"><div class="range">49–69K</div><h3>Entry / Trial</h3><p>Bánh mì cua, soup size S, món dễ thử. Mục tiêu: CAC thấp, đơn đầu tiên, traffic livestream.</p></div>
+      <div class="ladder signature"><div class="range">79–119K</div><h3>Signature / Profit</h3><p>Súp gạch, xôi cua, miến cua, combo đồ uống. Mục tiêu: contribution tốt và mua lại.</p></div>
+      <div class="ladder flagship"><div class="range">149–249K</div><h3>Flagship / Viral</h3><p>Cua cốm 2 da, sashimi, limited drop. Mục tiêu: content, FOMO, premium perception.</p></div>
+    </div>
+    <div class="table-wrap"><table>
+      <tr><th>SKU</th><th>COGS hiện tại*</th><th>Giá cũ</th><th>GM cũ</th><th>Đề xuất D2C</th><th>Đề xuất App</th><th>Logic</th></tr>
+      <tr><td class="td-bold">Súp cua thịt</td><td>34K</td><td>55K</td><td class="td-red">38%</td><td class="td-green">69K</td><td>79K</td><td class="td-muted">Giữ làm món entry nhưng không nên thấp hơn 65K nếu dùng cua thật và bao bì tốt.</td></tr>
+      <tr><td class="td-bold">Bánh mì gạch cua</td><td>36K</td><td>65K</td><td>45%</td><td class="td-green">79K</td><td>89K</td><td class="td-muted">Hero on-the-go. Có thể bán combo cafe/trà để nâng AOV.</td></tr>
+      <tr><td class="td-bold">Xôi cua thịt</td><td>43K</td><td>70K</td><td class="td-red">39%</td><td class="td-green">85K</td><td>95K</td><td class="td-muted">Món sáng no, dễ mua lại. Nên có size M/L.</td></tr>
+      <tr><td class="td-bold">Miến cua gạch</td><td>58K</td><td>90K</td><td class="td-red">36%</td><td class="td-green">109K</td><td>119K</td><td class="td-muted">Không nên underprice vì có nước dùng, packaging và delivery heat risk.</td></tr>
+      <tr><td class="td-bold">Sashimi cua cốm 2 da</td><td>75K?</td><td>120K</td><td class="td-red">38%</td><td class="td-green">149K–199K</td><td>169K–229K</td><td class="td-muted">Cần xác nhận gram thật. Nếu 200g raw, giá nên gần 249K.</td></tr>
+      <tr><td class="td-bold">Combo bánh mì + trà</td><td>58K</td><td>95K</td><td class="td-red">39%</td><td class="td-green">109K</td><td>125K</td><td class="td-muted">Dùng để che phí app và tăng AOV, không bán lẻ cùng giá trên mọi kênh.</td></tr>
+    </table></div>
+    <p style="font-size:13px;color:var(--muted);margin-top:12px">*COGS hiện tại lấy theo bảng full cost cũ: nguyên liệu cua + nguyên liệu phụ + bao bì, chưa gồm labor/order, waste reserve, channel fee và promo.</p>
+  </div>
+</section>
+
+<section class="section dark" id="estimator">
+  <div class="wide">
+    <div class="section-head">
+      <div><div class="kicker">04 · Interactive Estimator</div><h2 class="section-title">Kiểm tra giá bán từng món theo giá cua, portion, channel fee và target contribution.</h2></div>
+      <p class="section-lead">Dùng estimator này khi thương lượng giá với Seamorny, khi thêm SKU mới, hoặc khi chạy flash deal. Thay đổi input là thấy ngay recommended retail price.</p>
+    </div>
+    <div class="estimator">
+      <div class="panel">
+        <h3>SKU Input</h3>
+        <div class="field"><label>Chọn SKU <b id="skuNote">Súp cua thịt</b></label><select id="skuSelect"></select></div>
+        <div class="twocol">
+          <div class="field"><label>Giá cua/kg <b id="crabKgVal">300K</b></label><input id="crabKg" type="range" min="200000" max="800000" step="10000" value="300000"></div>
+          <div class="field"><label>Gram cua/phần <b id="gramsVal">80g</b></label><input id="grams" type="range" min="20" max="250" step="5" value="80"></div>
+        </div>
+        <div class="twocol">
+          <div class="field"><label>NL phụ <b id="otherVal">6.5K</b></label><input id="other" type="range" min="2000" max="35000" step="500" value="6500"></div>
+          <div class="field"><label>Bao bì/QR <b id="packVal">3.5K</b></label><input id="pack" type="range" min="1000" max="20000" step="500" value="3500"></div>
+        </div>
+        <div class="twocol">
+          <div class="field"><label>Labor/order <b id="laborVal">6K</b></label><input id="labor" type="range" min="2000" max="20000" step="500" value="6000"></div>
+          <div class="field"><label>Waste reserve <b id="wasteVal">7%</b></label><input id="waste" type="range" min="0" max="20" step="1" value="7"></div>
+        </div>
+        <div class="twocol">
+          <div class="field"><label>Channel fee <b id="feeVal">5%</b></label><input id="fee" type="range" min="0" max="30" step="1" value="5"></div>
+          <div class="field"><label>Promo/CAC <b id="promoVal">5%</b></label><input id="promo" type="range" min="0" max="30" step="1" value="5"></div>
+        </div>
+        <div class="field"><label>Target contribution sau fee <b id="targetVal">28%</b></label><input id="target" type="range" min="10" max="45" step="1" value="28"></div>
+      </div>
+      <div>
+        <div class="result-grid">
+          <div class="result-card"><span class="val" id="foodCostOut">34K</span><div class="lab">Food + Pack</div></div>
+          <div class="result-card"><span class="val" id="varCostOut">42K</span><div class="lab">Cost before fee</div></div>
+          <div class="result-card good"><span class="val" id="retailOut">69K</span><div class="lab">Suggested retail</div></div>
+          <div class="result-card warn"><span class="val" id="contribOut">19K</span><div class="lab">Contribution/order</div></div>
+        </div>
+        <div class="formula" id="formulaOut"></div>
+        <div class="verdict" id="verdictOut"></div>
+        <div class="panel" style="margin-top:14px">
+          <h3>Channel Quick Preset</h3>
+          <div class="grid-4" style="gap:10px">
+            <button class="btn ghost" onclick="setChannel(0,0)">Zalo/Web</button>
+            <button class="btn ghost" onclick="setChannel(5,5)">TikTok Live</button>
+            <button class="btn ghost" onclick="setChannel(22,8)">Shopee/Grab</button>
+            <button class="btn ghost" onclick="setChannel(0,3)">B2B Office</button>
+          </div>
+          <div class="mini-note">Gợi ý: App food delivery không nên dùng cùng giá với D2C. Hãy dùng giá app riêng hoặc bundle để bảo vệ contribution.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section dark" id="monthly" style="padding-top:0">
+  <div class="wide">
+    <div class="section-head">
+      <div><div class="kicker">05 · Monthly Scenario Simulator</div><h2 class="section-title">Mô phỏng doanh thu tháng, EBITDA và số đơn/ngày để hòa vốn.</h2></div>
+      <p class="section-lead">Estimator này phục vụ vận hành: khi AOV, số đơn/ngày, channel mix hoặc fixed cost đổi, tháng hòa vốn sẽ đổi ngay.</p>
+    </div>
+    <div class="estimator">
+      <div class="panel">
+        <h3>Monthly Inputs</h3>
+        <div class="field"><label>Orders/day <b id="ordersVal">60</b></label><input id="orders" type="range" min="10" max="180" step="5" value="60"></div>
+        <div class="field"><label>AOV <b id="aovVal">89K</b></label><input id="aov" type="range" min="45000" max="160000" step="1000" value="89000"></div>
+        <div class="field"><label>Food+Pack COGS ratio <b id="cogsRatioVal">43%</b></label><input id="cogsRatio" type="range" min="25" max="70" step="1" value="43"></div>
+        <div class="twocol"><div class="field"><label>Channel fee avg <b id="avgFeeVal">11%</b></label><input id="avgFee" type="range" min="0" max="25" step="1" value="11"></div><div class="field"><label>Promo avg <b id="avgPromoVal">5%</b></label><input id="avgPromo" type="range" min="0" max="20" step="1" value="5"></div></div>
+        <div class="twocol"><div class="field"><label>Labor/order <b id="mLaborVal">7K</b></label><input id="mLabor" type="range" min="2000" max="18000" step="500" value="7000"></div><div class="field"><label>Fixed/month <b id="fixedVal">55M</b></label><input id="fixed" type="range" min="25000000" max="120000000" step="5000000" value="55000000"></div></div>
+      </div>
+      <div>
+        <div class="result-grid">
+          <div class="result-card"><span class="val" id="revOut">160M</span><div class="lab">Revenue/month</div></div>
+          <div class="result-card"><span class="val" id="grossOut">91M</span><div class="lab">Gross profit</div></div>
+          <div class="result-card good"><span class="val" id="ebitdaOut">21M</span><div class="lab">EBITDA/month</div></div>
+          <div class="result-card warn"><span class="val" id="breakevenOut">47</span><div class="lab">Breakeven orders/day</div></div>
+        </div>
+        <div class="panel" style="margin-top:14px">
+          <h3>Revenue / EBITDA Chart</h3>
+          <div class="barbox" id="barbox"></div>
+          <div class="mini-note">Chart mô phỏng 6 tháng với đơn/ngày tăng dần từ 60% input hiện tại lên 160%.</div>
+        </div>
+        <div class="verdict" id="monthlyVerdict"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="visuals">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="kicker">06 · Product Visual Strategy</div><h2 class="section-title">Visual không chỉ đẹp. Visual phải giúp bán giá cao hơn.</h2></div>
+      <p class="section-lead">Mỗi ảnh món cần làm rõ phần "bữa ăn" hơn phần "con cua": nóng, đầy đặn, sạch, giao nhanh, có nguồn gốc. Cua là hero ingredient, không phải sản phẩm thô.</p>
+    </div>
+    <div class="dish-grid">
+      <div class="dish"><div class="dish-visual"></div><div class="dish-body"><h3>Signature Bowl</h3><p>Súp/miến/xôi nên chụp kiểu "meal-ready": muỗng, topping, hơi nóng, bề mặt đầy đặn.</p></div></div>
+      <div class="dish"><div class="dish-visual" style="background:radial-gradient(circle at 50% 34%,#FFF6DF 0 18%,#F0B35A 19% 25%,#C4501A 26% 33%,transparent 34%),linear-gradient(135deg,#FFF,#FCE6D4)"></div><div class="dish-body"><h3>Order Builder</h3><p>Chọn cua → chọn món → chọn size → chọn topping. Dùng như menu app, post social và livestream overlay.</p></div></div>
+      <div class="dish"><div class="dish-visual" style="background:radial-gradient(circle at 52% 36%,#FFF9F0 0 20%,#2A6B5A 21% 28%,#C4501A 29% 36%,transparent 37%),linear-gradient(135deg,#EAF6F0,#fff)"></div><div class="dish-body"><h3>Source Badge</h3><p>Seamorny là badge tin cậy: QR nguồn gốc, farm-to-table, AI aquaculture. Không đặt lấn logo Bích Cua.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="plan">
+  <div class="container">
+    <div class="section-head">
+      <div><div class="kicker">07 · Action Plan</div><h2 class="section-title">5 việc cần làm trước khi chốt giá launch.</h2></div>
+      <p class="section-lead">Pricing không nên chốt bằng cảm giác. Cần một buổi test bếp, cân gram, đo yield và chạy thử app commission.</p>
+    </div>
+    <div class="grid-2">
+      <div class="card white"><h3>1. Kitchen yield test</h3><p>Cân cua sống → hấp/sơ chế → cân thịt/gạch usable → xác định cost/gram thật cho từng loại cua. Đặc biệt kiểm chứng cua cốm 2 da.</p></div>
+      <div class="card white"><h3>2. Channel price rule</h3><p>Tạo 3 bảng giá: D2C base, TikTok Live, Shopee/Grab. Không dùng một giá cho mọi kênh.</p></div>
+      <div class="card white"><h3>3. Packaging cost lock</h3><p>Chốt packaging theo 2 mức: hộp thường cho Entry, hộp premium giữ nhiệt/QR cho Signature & Flagship.</p></div>
+      <div class="card white"><h3>4. Bundle design</h3><p>Dùng combo để che phí app: bánh mì + trà, soup + xôi, office breakfast box 5–10 phần.</p></div>
+      <div class="card white"><h3>5. Weekly margin review</h3><p>Mỗi tuần xuất P&L theo SKU: revenue, COGS, waste, channel fee, promo, contribution/order. Cắt SKU biên mỏng.</p></div>
+      <div class="warning green-box"><h3>Pricing rule cuối cùng</h3><p><b>Giá rẻ để thử, nhưng không được rẻ để chết.</b> Nếu món nào không đạt contribution tối thiểu 18–20% sau phí kênh, món đó chỉ nên là limited promo, không phải SKU core.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <svg class="logo-svg"><use href="#bich-cua-logo"/></svg>
+  <p>Bích Cua — Business Plan Pricing & COGS Estimator · Professional HTML Export</p>
+</footer>
+
+<script>
+const fmt = n => {
+  if (!isFinite(n)) return '—';
+  if (Math.abs(n) >= 1000000) return Math.round(n/1000000) + 'M';
+  return Math.round(n/1000) + 'K';
+};
+const pct = n => Math.round(n*100) + '%';
+const skus = {
+  soup:{name:'Súp cua thịt', note:'Entry hero', crabKg:300000, grams:80, other:6500, pack:3500, labor:6000, fee:5, promo:5, target:28},
+  banhmi:{name:'Bánh mì gạch cua', note:'On-the-go hero', crabKg:600000, grams:40, other:8500, pack:3500, labor:6000, fee:5, promo:5, target:30},
+  xoi:{name:'Xôi cua thịt', note:'Morning profit SKU', crabKg:450000, grams:70, other:8000, pack:3500, labor:6500, fee:5, promo:5, target:30},
+  mien:{name:'Miến cua gạch', note:'Hot delivery risk', crabKg:550000, grams:80, other:10000, pack:5000, labor:7500, fee:5, promo:5, target:30},
+  sashimi:{name:'Sashimi cua cốm 2 da', note:'Flagship cần yield test', crabKg:600000, grams:100, other:7000, pack:8000, labor:8000, fee:5, promo:5, target:32},
+  combo:{name:'Combo bánh mì + trà', note:'AOV & app bundle', crabKg:450000, grams:100, other:9000, pack:5000, labor:7000, fee:5, promo:5, target:30}
+};
+const ids = ['crabKg','grams','other','pack','labor','waste','fee','promo','target'];
+const skuSelect = document.getElementById('skuSelect');
+Object.entries(skus).forEach(([k,v])=>{let o=document.createElement('option');o.value=k;o.textContent=v.name;skuSelect.appendChild(o)});
+skuSelect.addEventListener('change',()=>{const s=skus[skuSelect.value]; ['crabKg','grams','other','pack','labor','fee','promo','target'].forEach(id=>document.getElementById(id).value=s[id]); document.getElementById('waste').value=7; calcSKU();});
+ids.forEach(id=>document.getElementById(id).addEventListener('input', calcSKU));
+function setChannel(fee,promo){document.getElementById('fee').value=fee;document.getElementById('promo').value=promo;calcSKU();}
+function calcSKU(){
+  const s = skus[skuSelect.value];
+  const crabKg=+document.getElementById('crabKg').value, grams=+document.getElementById('grams').value, other=+document.getElementById('other').value, pack=+document.getElementById('pack').value, labor=+document.getElementById('labor').value, waste=+document.getElementById('waste').value/100, fee=+document.getElementById('fee').value/100, promo=+document.getElementById('promo').value/100, target=+document.getElementById('target').value/100;
+  document.getElementById('skuNote').textContent=s.note;document.getElementById('crabKgVal').textContent=fmt(crabKg);document.getElementById('gramsVal').textContent=grams+'g';document.getElementById('otherVal').textContent=fmt(other);document.getElementById('packVal').textContent=fmt(pack);document.getElementById('laborVal').textContent=fmt(labor);document.getElementById('wasteVal').textContent=Math.round(waste*100)+'%';document.getElementById('feeVal').textContent=Math.round(fee*100)+'%';document.getElementById('promoVal').textContent=Math.round(promo*100)+'%';document.getElementById('targetVal').textContent=Math.round(target*100)+'%';
+  const crabCost=crabKg*grams/1000, foodPack=crabCost+other+pack, wasteCost=foodPack*waste, costBeforeFee=foodPack+wasteCost+labor;
+  const denominator=1-fee-promo-target;
+  let retail = denominator>0 ? costBeforeFee/denominator : 999999;
+  retail = Math.ceil(retail/1000)*1000;
+  const contribution = retail - costBeforeFee - retail*fee - retail*promo;
+  const foodPackRatio = foodPack/retail;
+  document.getElementById('foodCostOut').textContent=fmt(foodPack);document.getElementById('varCostOut').textContent=fmt(costBeforeFee);document.getElementById('retailOut').textContent=fmt(retail);document.getElementById('contribOut').textContent=fmt(contribution);
+  document.getElementById('formulaOut').innerHTML = `<b>Formula:</b> Suggested Retail = (Crab ${fmt(crabCost)} + NL phụ ${fmt(other)} + Bao bì ${fmt(pack)} + Waste ${fmt(wasteCost)} + Labor ${fmt(labor)}) ÷ (1 - Fee ${Math.round(fee*100)}% - Promo ${Math.round(promo*100)}% - Target Contribution ${Math.round(target*100)}%)<br><br><b>Food+Pack COGS ratio:</b> ${Math.round(foodPackRatio*100)}% · <b>Contribution after fee:</b> ${Math.round(contribution/retail*100)}%`;
+  const verdict=document.getElementById('verdictOut');
+  verdict.className='verdict';
+  if(contribution/retail < .18){verdict.className='verdict bad';verdict.innerHTML='<b>Không nên bán giá này.</b> Contribution sau fee thấp hơn 18%. Cần tăng giá, giảm gram cua, chuyển sang bundle hoặc bán D2C thay vì app.'}
+  else if(foodPackRatio>.50){verdict.className='verdict warn';verdict.innerHTML='<b>Biên còn mỏng.</b> Food+Pack COGS vượt 50% giá bán. Chỉ nên dùng làm hero/limited SKU, không nên làm SKU kiếm tiền chính.'}
+  else{verdict.innerHTML='<b>Ổn để test.</b> Giá này có thể dùng cho launch nếu kitchen yield test xác nhận đúng cost/gram và waste nằm trong kiểm soát.'}
+}
+['orders','aov','cogsRatio','avgFee','avgPromo','mLabor','fixed'].forEach(id=>document.getElementById(id).addEventListener('input',calcMonthly));
+function calcMonthly(){
+  const orders=+document.getElementById('orders').value,aov=+document.getElementById('aov').value,cogs=+document.getElementById('cogsRatio').value/100,fee=+document.getElementById('avgFee').value/100,promo=+document.getElementById('avgPromo').value/100,labor=+document.getElementById('mLabor').value,fixed=+document.getElementById('fixed').value;
+  document.getElementById('ordersVal').textContent=orders;document.getElementById('aovVal').textContent=fmt(aov);document.getElementById('cogsRatioVal').textContent=Math.round(cogs*100)+'%';document.getElementById('avgFeeVal').textContent=Math.round(fee*100)+'%';document.getElementById('avgPromoVal').textContent=Math.round(promo*100)+'%';document.getElementById('mLaborVal').textContent=fmt(labor);document.getElementById('fixedVal').textContent=fmt(fixed);
+  const days=30, rev=orders*aov*days, food=rev*cogs, channel=rev*fee, promoCost=rev*promo, laborCost=orders*labor*days, gross=rev-food, ebitda=rev-food-channel-promoCost-laborCost-fixed;
+  const contribPerOrder=aov*(1-cogs-fee-promo)-labor;
+  const breakEven=contribPerOrder>0 ? Math.ceil(fixed/contribPerOrder/days) : 999;
+  document.getElementById('revOut').textContent=fmt(rev);document.getElementById('grossOut').textContent=fmt(gross);document.getElementById('ebitdaOut').textContent=fmt(ebitda);document.getElementById('breakevenOut').textContent=breakEven>300?'—':breakEven;
+  const ebitdaEl=document.getElementById('ebitdaOut').parentElement; ebitdaEl.className='result-card '+(ebitda>=0?'good':'bad');
+  const verdict=document.getElementById('monthlyVerdict'); verdict.className='verdict';
+  if(ebitda<0){verdict.className='verdict bad';verdict.innerHTML=`<b>Chưa hòa vốn.</b> Với input hiện tại cần khoảng ${breakEven} đơn/ngày để cover fixed cost ${fmt(fixed)}. Ưu tiên tăng AOV hoặc giảm channel fee trước khi tăng ads.`}
+  else if(orders<breakEven*1.25){verdict.className='verdict warn';verdict.innerHTML=`<b>Hòa vốn nhưng còn mỏng.</b> EBITDA dương ${fmt(ebitda)}, nhưng buffer thấp. Nên giữ cash runway và không mở rộng fixed cost quá nhanh.`}
+  else{verdict.innerHTML=`<b>Scenario tốt.</b> EBITDA ước tính ${fmt(ebitda)}/tháng. Có thể tái đầu tư performance ads nếu CAC payback dưới 30 ngày.`}
+  renderBars(orders,aov,cogs,fee,promo,labor,fixed);
+}
+function renderBars(orders,aov,cogs,fee,promo,labor,fixed){
+  const box=document.getElementById('barbox'); box.innerHTML=''; const factors=[.6,.8,1,1.2,1.4,1.6];
+  const vals=factors.map(f=>{let o=Math.round(orders*f); let rev=o*aov*30; let e=rev-rev*cogs-rev*fee-rev*promo-o*labor*30-fixed; return {o,rev,e}});
+  const max=Math.max(...vals.map(v=>Math.abs(v.e)),1);
+  vals.forEach(v=>{let col=document.createElement('div');col.className='bar '+(v.e<0?'neg':'');let h=Math.max(6,Math.round(Math.abs(v.e)/max*140));col.innerHTML=`<div style="height:${h}px"></div><span>${v.o} đơn</span><span>${fmt(v.e)}</span>`;box.appendChild(col)});
+}
+calcSKU();calcMonthly();
+</script>
+</body>
+</html>
